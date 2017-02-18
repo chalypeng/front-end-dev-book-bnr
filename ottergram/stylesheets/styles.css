@@ -122,11 +122,50 @@ a[href="#"] {
     .main-content {
         flex-direction: row;
         overflow: hidden;
+        margin-left: 20px;
     }
 
     .thumbnail-list {
         flex-direction: column;
         order: 0;
+    }
+
+    .thumbnail-item {
+        max-width: 260px;
+    }
+
+    .thumbnail-item + .thumbnail-item {
+        margin-top: 20px;
+    }
+}
+
+/* Chapter 5 Bronze Challenge:  Portrail*/
+@media all and (orientation: portrait) {
+    /* Some styles to do there if portrait*/
+}
+
+@media all and (orientation: landscape) {
+    .main-content {
+        flex-direction: row;
+        overflow: hidden;
+        margin-left: 10px;
+    }
+
+    .detail-image {
+        width: 70%;
+    }
+
+    .thumbnail-list {
+        flex-direction: column;
+        order: 0;
+    }
+
+    .thumbnail-item {
+        max-width: 150px;
+    }
+
+    .thumbnail-item + .thumbnail-item {
+        margin-top: 10px;
     }
 
 }
