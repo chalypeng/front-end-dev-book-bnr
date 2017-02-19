@@ -26,7 +26,7 @@ body {
     /*background: #A54D8C;*/
 }
 
-a[href="#"] {
+a[href] {
     text-decoration: none;
 }
 
